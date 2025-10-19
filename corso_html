@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisione Corso HTML - Dashboard</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header>
+        <h1>Dashboard di Revisione: Corso HTML</h1>
+        <p>Confronto, Note e Strumenti AI.</p>
+        <div style="margin-top: 10px;">
+            <a href="https://drive.google.com/drive/u/0/my-drive" target="_blank" class="button-link">Apri Google Drive</a>
+            <a href="index.html" class="button-link">Torna all'Elenco Progetti ↩️</a> 
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>Capitolo: [Nome della Lezione Qui]</h2>
+
+        <section class="split-view">
+            <div class="column">
+                <h3>Testo VECCHIO (Copia da Google Docs)</h3>
+                <div id="testo-vecchio" class="input-area" contenteditable="true" 
+                     placeholder="Incolla qui il testo OBSELETO o le scansioni da Google Docs."></div>
+            </div>
+            
+            <div class="column">
+                <h3>Note / Aggiornamenti / Domande AI</h3>
+                <textarea id="note-aggiornamenti" class="input-area" 
+                          placeholder="Scrivi qui i problemi riscontrati, le soluzioni moderne e le domande specifiche per l'AI."></textarea>
+            </div>
+        </section>
+
+        <section id="ai-interface">
+            <h2>Generatore Contesto AI</h2>
+            <button id="genera-prompt">1. Genera e Copia Prompt AI</button>
+            <p style="font-size: 0.9em; margin-top: 5px;">2. Incolla il testo copiato nella finestra del Bot AI.</p>
+            
+            <textarea id="prompt-output" rows="10" placeholder="Il prompt AI pronto per la copia apparirà qui..." readonly></textarea>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Revisione Corso HTML - Pronti per iniziare.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
